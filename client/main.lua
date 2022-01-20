@@ -206,8 +206,8 @@ if Config.Antiresourcestop then
 AddEventHandler("onResourceStop", function(res, source)
         local source = src
         if res == GetCurrentResourceName() then
-print(GetPlayerName(src) .. "Was kickaed for stoping" .. res)
-DropPlayer(src, "Stoping Resources.")
+print(GetPlayerName(src) .. "Was kicked for stopping" .. res)
+DropPlayer(src, "Stopping Resources.")
             Citizen.Wait(100)
             CancelEvent()
         end 
